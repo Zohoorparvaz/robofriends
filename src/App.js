@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Cardlist from "./components/Cardlist"
 // import { robots } from "./DB/robots"
 import Searchbox from "./components/Searchbox"
+import Scroll from "./components/Scroll"
 
 
 const App = () => {
@@ -25,7 +26,9 @@ const App = () => {
     <div className="tc">
       <h1 className="f1">RoboFriends</h1>
       <Searchbox onSearch={onSearch} />
-      <Cardlist robots={filteredRobots} />
+      <Scroll>
+        <Cardlist robots={filteredRobots} />
+      </Scroll>
     </div>
   );
 }
