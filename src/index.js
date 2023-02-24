@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Test from "./Test"
-import "tachyons"
+import App from "./App"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Test testProps={"This is a test"} />
+    <App />
   </React.StrictMode>
 );
 
