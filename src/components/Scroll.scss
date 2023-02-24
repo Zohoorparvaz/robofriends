@@ -1,0 +1,9 @@
+.scrollContainer {
+  overflow-y: scroll;
+  border: 1px solid aqua;
+  height: 800px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
