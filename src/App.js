@@ -1,10 +1,12 @@
 import React from "react";
-import Card from "./components/Card"
+import Cardlist from "./components/Cardlist"
+import { robots } from "./DB/robots"
 
 
 const App = () => {
+
   return (
-    <Card />
+    <Cardlist robots={robots} />
   );
 }
 
